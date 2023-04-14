@@ -1,0 +1,64 @@
+*{margin:0;padding:0;}
+.parent{
+    width:800px;
+    border:1px solid red;
+    margin: 0 auto;
+}
+.parent>p{
+    width:auto;
+    /* 오토로 지정해서 800픽셀 */
+    border: 10px solid black;
+    /* 컨텐츠가 놓이는 공간은 800-20 780픽셀 */
+    padding: 0 50px;
+    /* 패딩을 빼면 컨텐츠공간은 680픽셀 */
+}
+.parent2{
+    width:800px;
+    border:1px solid red;
+    margin: 0 auto;
+}
+.parent2>p{
+    width:800px;
+    /* 오토로 지정해서 800픽셀 */
+    border: 10px solid black;
+    /* 컨텐츠가 놓이는 공간은 800-20 780픽셀 */
+    padding: 0 50px;
+    /* 패딩을 빼면 컨텐츠공간은 680픽셀 */
+}
+
+.box1{
+    border:5px solid red;
+    width: 50%;
+    /* 부모태그 픽셀의 50프로만큼 적용한다. */
+}
+.parent3{
+    border: 1px solid blue;
+    width: 80%;
+    margin: 0 auto;
+}
+.parent3>p{
+    width: 50%;
+    border:1px solid red;    
+}
+.parent4{
+    border: 1px solid black;
+    width: 1000px;
+    margin: 0 auto;
+}
+.parent4>p{
+    border: 10px solid red;
+    width: 30vw;
+}
+.parent4>p+p{
+    width:50vh;
+}
+
+.box2{
+    border:5px solid red;
+    width:200px;
+    height:200px;
+}
+.box3{
+    border:5px solid blue;
+    width:200px;    
+}
