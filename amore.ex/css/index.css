@@ -1,0 +1,278 @@
+*{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+ul,ol{list-style: none;}
+
+html{
+    align-content: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    
+}
+
+#container{
+    background: url(../img2/bg_body.jpg)no-repeat;
+    height: 55vh;
+    background-size: cover;
+}
+.top{
+    width: 1000px;    
+    border: 1px solid red;
+    align-content: center;
+    margin: 0 auto;
+
+}
+
+header{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    /* height:95px; */
+}
+
+.logo{
+    position: relative;
+    left: 0px;
+    top:40px;    
+}
+
+.inb{
+    margin: 7px 0 7px 0;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.gnb{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;    
+    color: black;    
+}
+
+.inb>li{
+    /* border:1px solid blue; */
+    color: #9e9e9e; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 2px 8px;
+}
+
+.gnb>li{
+    padding: 10px 20px;
+    margin:0 5px;
+
+}
+
+/* ------------------------------------------------------- */
+
+main> .mainbanner>h2{
+    color: rgb(81, 136, 255);
+    font-family: times new roman;
+    font-size: 65px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.mainbanner>dl{
+    /* border:5px solid blue; */
+    width:350px;
+    height:160px;    
+    display: flex;    
+    position: relative;
+    align-items: flex-start;
+}
+
+.mainbanner>dl>dt{
+    /* border: 1px solid red; */
+    color: #9e9e9e;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+    
+    height: 20px;
+    
+}
+main>.ab{
+    float: right;
+    color: #7c7c7c;
+    font-weight:500;
+}
+.mainbanner>dl>dt.on{
+    color: navy;
+    border-bottom: 1px solid #9e9e9e;
+    
+}
+
+.mainbanner>dl>dd{
+    color: #9e9e9e;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0;
+    top:40px;
+    width:100%;
+    transition:all 0.5s ease 0s;
+    height: 0;
+    overflow: hidden;
+}
+.mainbanner>dl>dt.on+dd{
+    display: block;
+    height: 100px;
+}
+
+main span{
+    float: right;
+}
+
+
+
+/* --------------------------------------------------   */
+
+
+#bottom{background: #2a367e;
+    background-size: cover;
+    height: 100vh;
+    
+
+}
+
+#bottom .flo{
+    position: absolute;
+    left: 1100px;
+}
+
+#bottom>.contents{
+    width: 1000px;    
+    /* border: 1px solid red; */
+    align-content: center;
+    margin: 0 auto 40px auto;
+    height: 240px;
+    border-bottom: 1px solid white ;
+
+
+}
+
+/* --------------------------------------------------   */
+article>h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: white;
+}
+
+#bottom>.contents{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    
+}
+
+article>.a{
+    color: white;
+}
+
+#bottom .aa{
+    margin-right: 40px;
+}
+
+#bottom .num{
+    margin-right: 10px;
+}
+
+#bottom .tt{
+    margin-left: 10px;
+}
+
+#bottom ol li{
+    margin-bottom: 5px;
+}
+
+#bottom dl{
+    margin-top: 20px;
+    display: flex;
+    width:200px;
+    height: 150px;
+    border:1px solid black;
+    position: relative;
+    align-items: flex-start;
+    margin-right: 40px;    
+}
+
+#bottom dl>dt{
+    color: white;
+    border:1px solid blue;
+    background: #172364;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 2px 0px 2px 0px;
+    width: 70px;
+    /* padding: 6px 0; */
+    display: flex;
+    align-items: center;
+
+}
+
+#bottom dl>dt.on{
+    background-color: rgb(87, 87, 221);
+    color: white;
+
+}
+
+#bottom dl>dd{
+    /* border:1px solid red; */
+    position: absolute;
+    left: 0;
+    top:40px;
+    width:100%;
+    /* opacity: 0; */
+    /* display: none; */
+    transition:all 0.5s ease 0s;
+    height: 0;
+    overflow: hidden;
+
+}
+
+#bottom dl>dt.on+dd{
+    display: block;
+    height: 100px;
+}
+
+#bottom .footer{
+    width: 1000px;    
+    /* border: 1px solid red; */
+    /* align-content: center; */
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/* --------------------------------------------------   */
+.ll select{
+    width: 150px;
+    padding:3px 0px 5px 3px;
+    margin-right: 10px;
+   background: none;
+   font-size: 10px;
+   color: white;
+   border: 1px solid white;
+}
+
+.ll a{
+    color: white;
+    font-size: 10px;
+}
+
+.mm{position: relative;    
+    left: 0;
+    top: 12px;
+}
+

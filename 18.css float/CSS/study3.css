@@ -1,0 +1,211 @@
+*{margin: 0; padding: 0;}
+.box{
+    width: 1000px;
+    background: pink;
+    margin: 0 auto;
+}
+.box>section{
+    height:300px;
+    font-size: 5rem;
+    
+}
+.box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box .s1{
+    width:250px; background:red;
+    border: 1px solid lime;
+    
+    float:left;   
+}
+.box .s2{
+    width:250px; background:blue; float:left;}
+.box .s3{
+    width:250px; background:green; float:left;}
+.box .s4{
+    width:250px; background:orange; float:left;}
+/* ----------------------------------- */
+
+.box2{
+    width: 1000px;    
+    margin: 100px auto;
+    background: pink;
+}
+
+.box2>section{
+    font-size: 5rem;
+    float: left;
+}
+
+.box2:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.box2 .s1{
+    width: calc(50% - 5px);
+    background: red;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.box2 .s2{
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    background: blue;
+}
+
+.box2 .s3{
+    width: calc(50% - 5px);
+    background: green;
+    margin-right: 10px;
+}
+
+
+.box2 .s4{
+    width: calc(50% - 5px);
+    background: orange;
+}
+/* -------------------------- */
+
+.box3{
+    width: 1000px;    
+    margin: 100px auto;
+    background: pink;
+}
+.box3>section{
+    font-size: 5rem;
+    float: right;
+}
+
+.box3:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box3 .s1{
+    width: calc(100% / 3 - 40px / 3);
+    background: red;
+    margin-left:20px;
+    margin-bottom: 20px;
+   
+}
+.box3 .s2{
+    width: calc(100% / 3 - 40px / 3);
+    background: blue;
+    
+   
+}
+.box3 .s3{
+    width: calc(100% / 3 - 40px / 3);
+    background: green;
+    margin-right:20px
+    
+    
+}
+.box3 .s4{
+    width: 1000px;
+    background: orange;
+    
+    
+}
+
+
+/* -------------------------- */
+
+.box4{
+    width: 1000px;
+    margin: 100px auto;
+    background: pink;
+}
+
+.box4>section{
+    font-size: 5rem;
+    float: left;
+}
+
+.box4:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box4 .s1{
+    width: 300px;
+    height: 640px; 
+    background: red;
+    margin-right: 20px;
+}
+
+.box4 .s2{
+    width:680px;
+    height:calc(640px / 3 - 40px / 3); 
+    background: blue;
+    margin-bottom: 20px ;
+}
+
+.box4 .s3{
+    width:680px;
+    height:calc(640px / 3 - 40px / 3); 
+    background: green;
+    margin-bottom: 20px ;
+}
+
+.box4 .s4{
+    width:680px;
+    height:calc(640px / 3 - 40px / 3); 
+    background: orange;
+}
+
+/* -------------------------- */
+
+.box5{
+    width: 1000px;
+    margin: 100px auto;
+    background: pink;
+}
+
+.box5>section{
+    font-size: 5rem;
+    width: calc((100% - 40px)/3); 
+}
+
+.box5 .s1{
+    height: 420px;
+    background: red;    
+    float: left;
+    margin-right: 20px;
+
+}
+
+.box5 .s2{
+    height: 200px;
+    float: right;
+    background: blue;
+    margin-bottom: 20px;
+}
+
+.box5 .s3{
+    height: 420px;
+    float: left;
+    background: green;    
+}
+
+.box5 .s4{
+    height: 200px;
+    float: right;
+    background: orange;
+    
+}
+.box5:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+

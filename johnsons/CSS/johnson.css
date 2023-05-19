@@ -1,0 +1,114 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
+
+/* font */
+
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* mainlayout */
+
+html{   
+    font-size: 18px;   
+}
+
+.container{    
+    margin:0 auto;
+}
+
+header{
+    border: 1px solid red;
+    width: 1920px;
+    height: 250px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+
+}
+
+header> .logoTop{text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.menuBar{}
+
+
+header> nav >ul{
+    font-family: Pretendard;
+    font-weight: 300;
+    width: 930px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 160px;
+    margin-left: 160px;
+}
+
+.searchBar{
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 270px;
+    height: 42px;
+}

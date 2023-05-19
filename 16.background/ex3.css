@@ -1,0 +1,75 @@
+*{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+
+body{
+    
+    font-size: 20px;   
+}
+    
+
+.container{        
+    width: 1920px;   
+    margin: 0 auto;    
+}
+
+.header{
+    background: url(./예제2/sub_vis01_02.jpg) no-repeat;
+    height: 250px;
+}
+
+.main{        
+    width: 1200px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.top{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: left;    
+    background: url(./예제2/sub_tit_line.gif) repeat-x center;        
+}
+
+h3{
+    font-weight: bold;
+    font-size: 30px;
+    width: 210px;
+    background-color: white;
+}
+
+.bottom{    
+    font-family: pulmuone;
+}
+
+h1{
+    font-size: 52px;
+    margin-top: 100px;
+    margin-bottom:50px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+div.b{
+    font-family:'Noto Sans KR', sans-serif ;
+    width: 810px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: bold;
+    padding:40px 90px 50px 90px;
+    box-sizing: border-box;
+    background-color: rgb(244, 244, 244);
+}
+
+h2{
+    font-size: 35px;
+    font-family: pulmuone;       
+}
+
+.ab{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+

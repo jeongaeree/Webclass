@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표예제</title>
+    <link rel="stylesheet" href="./ex1.css">
+</head>
+<body>
+  
+    <script>    
+        let name = (prompt("이름을 입력해주세요"))
+        let scorekr = Number(prompt("국어점수를 입력해주세요."))
+        let scoreen = Number(prompt("수학점수를 입력해주세요."))
+        let scorema = Number(prompt("영어점수를 입력해주세요."))
+        let scoreaver = (scorekr+scoreen+scorema)/3
+        let usergrade = (scoreaver>=90?"A":scoreaver>=80?"B":scoreaver>=70?"C":"D")
+        
+
+
+
+       document.write(` <table class="gradestyle">
+        <caption>${name}님의 성적표</caption>
+        <tr>
+            <th>신장</th>
+            <td>${scorekr}점</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td>${scoreen}점</td>
+        </tr>
+        <tr>
+            <th>수학</th>
+            <td>${scorema}점</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>${scorekr+scoreen+scorema}점</td>
+        </tr>
+        <tr>
+            <th>BMI</th>
+            <td>${scoreaver}점</td>
+        </tr>
+        <tr>
+            <th>결과</th>
+            <td>${usergrade}</td>
+        </tr>
+        </table>`)
+    </script>
+    
+</body>
+</html>
