@@ -92,23 +92,67 @@ header> .logoTop{text-align: center;
     
 }
 
-.menuBar{}
+.menuBar{
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+
+}
 
 
-header> nav >ul{
+.menuBar> nav > ul{
+     border: 1px solid rgb(0, 225, 255);
     font-family: Pretendard;
+    font-size:20px;
     font-weight: 300;
     width: 930px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-right: 160px;
-    margin-left: 160px;
+    margin-top: 20px;    
 }
+ .menuBar> nav > ul> li> ul> li{
+    border: 1px solid red;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+
 
 .searchBar{
     border: 1px solid gray;
     border-radius: 30px;
     width: 270px;
     height: 42px;
+}
+
+.menuBar > .searchBar > a > img{
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: 230px;
+    position: absolute;
+    margin-top: 7px;
+    
+}
+
+/* ------------------------------------------------- */
+
+main> .mainBanner{
+    border: 1px solid blue;
+    width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.topB{
+    width: 100%;
+    transition: all 1s ease 0s;
+    transform: translateY(0%);
 }
