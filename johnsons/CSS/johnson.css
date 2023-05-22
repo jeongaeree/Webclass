@@ -68,57 +68,99 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     font-display: swap;
 }
 
-/* mainlayout */
+/* headerlayout */
 
 html{   
-    font-size: 18px;   
+    font-size: 17px;   
 }
 
 .container{    
     margin:0 auto;
 }
 
-header{
+.inner{
     border: 1px solid red;
     width: 1920px;
     height: 250px;
     border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+header{
+    border: 1px solid red;
+    width: 1920px;
+    height: 250px;   
+    /* transition: all 0.5s ease 0s;
+    overflow: hidden; */
+    z-index: 10000;
+    
 
 }
 
-header> .logoTop{text-align: center;
+header> .inner >.logoTop{
+    text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
     
 }
 
+header:hover{
+    background: #fff;
+    color: #000;
+    height: 425px;}
+
+.menuBar>nav>ul>li>ul>li:nth-child(1){
+    border: 1px solid rgb(26, 255, 0);
+    margin-top: 44px;
+}
+
 .menuBar{
     border: 1px solid red;
+    
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    text-align: center;
+    
     margin-right: 100px;
     margin-left: 100px;
+    z-index: 100000;
     
 
 }
 
 
 .menuBar> nav > ul{
-     border: 1px solid rgb(0, 225, 255);
+    border: 1px solid rgb(0, 225, 255);
     font-family: Pretendard;
-    font-size:20px;
+    font-size:19px;
     font-weight: 300;
+    color: rgb(35, 35, 35);
     width: 930px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 20px;    
+    position: relative;
+    margin-top: 20px;   
+       
 }
+.menuBar> nav > ul > li {
+    /* border: 1px solid red; */
+    width: 150px;
+    font-size: 17px;
+}
+
+.menuBar> nav > ul >h4{
+    border: 1px solid rgb(0, 225, 255);
+    margin-bottom: 20px;
+
+}
+
+
  .menuBar> nav > ul> li> ul> li{
     border: 1px solid red;
     margin: 20px auto;
     text-align: center;
+    margin: 25px 0;
 
 }
 
@@ -129,6 +171,7 @@ header> .logoTop{text-align: center;
     border-radius: 30px;
     width: 270px;
     height: 42px;
+    margin-right: 40px;
 }
 
 .menuBar > .searchBar > a > img{
@@ -143,7 +186,7 @@ header> .logoTop{text-align: center;
 /* ------------------------------------------------- */
 
 main> .mainBanner{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 1920px;
     height: 600px;
     margin: 0 auto;
@@ -156,3 +199,8 @@ main> .mainBanner{
     transition: all 1s ease 0s;
     transform: translateY(0%);
 }
+
+main>mainBanner>.cd{
+    position: absolute;
+}
+
