@@ -1,0 +1,236 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
+
+/* font */
+
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+/* headerlayout */
+
+html{   
+    font-size: 17px;
+    
+    
+   
+}
+
+.container{    
+    border: 1px solid red;
+    width: 1920px;
+    height: 200px;    
+    margin:0 auto;
+}
+
+
+
+header{
+    width: 1920px;
+    height: 200px;
+    border: 5px solid red;
+    background: #fff;       
+    margin:0 auto;    
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;    
+    transform: translateX( -50% );    
+    transition: all 0.5s ease 0s;
+    overflow: hidden; 
+
+}
+
+header>.logoTop{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+.menuA{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+}
+
+.line{
+    border-bottom: 1px solid red;
+}
+
+
+.menuBar> nav > ul:hover .menuB{    
+    display: block;
+    background: #fff;   
+    }
+
+
+
+
+.menuBar>nav>ul>li>ul>li{
+    border: 1px solid rgb(26, 255, 0);
+    margin-top: 20px;}
+
+
+.menuBar{
+    border: 1px solid red;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+   
+    background: #fff;
+    transition: all 0.5s ease 0s;
+   
+
+}
+
+
+.menuBar> nav > ul{
+    /* border: 1px solid rgb(0, 225, 255); */
+    font-family: Pretendard;
+    font-size:19px;
+    font-weight: 300;
+    color: rgb(35, 35, 35);
+    width: 930px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+       
+}
+.menuBar> nav > ul > li {
+    /* border: 1px solid red; */
+    width: 150px;
+    font-size: 17px;
+    display: block;
+    
+}
+
+.menuBar> nav > ul >h4{
+    border: 1px solid rgb(0, 225, 255);
+    margin-bottom: 20px;
+
+}
+
+
+ .menuBar> nav > ul> li> ul{
+    border: 1px solid red;
+    margin: 20px auto;
+    text-align: center;
+    margin: 25px 0;
+    display: none;
+
+}
+
+
+
+
+.searchBar{
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 270px;
+    height: 42px;
+    margin-right: 40px;
+    /* margin-left: 100px; */
+    
+}
+
+.menuBar > .searchBar > a > img{
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: 230px;
+    position: absolute;
+    margin-top: 7px;
+    
+}
+
+/* ------------------------------------------------- */
+
+main> .mainBanner{
+    /* border: 1px solid blue; */
+    width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.topB{
+    width: 100%;
+    transition: all 1s ease 0s;
+    transform: translateY(0%);
+}
+
+main>mainBanner>.cd{
+    /* position: absolute; */
+}
+

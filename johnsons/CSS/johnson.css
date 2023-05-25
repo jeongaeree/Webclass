@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     font-display: swap;
 }
 
+<<<<<<< HEAD
 /* Layout   */
 html{font-size: 17px;}
 .container{margin:0 auto;}
@@ -88,11 +89,58 @@ header{
     position: fixed;
     z-index: 10000; */ 
     /* overflow: hidden; */
+=======
+
+
+/* headerlayout */
+
+html{   
+    font-size: 17px;
+    
+    
+   
+}
+
+.container{    
+    border: 1px solid red;
+    
+    margin:0 auto;
+}
+
+.inner{
+    position: fixed;
+    
+    
+    
+    border: 1px solid red;
+    width: 1920px;
+    height: 200px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+    z-index: 100;
+}
+
+header{
+    border: 1px solid red;
+    background: #fff;
+    width: 1920px;
+    height: 200px;   
+    margin:0 auto;
+    
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;    
+    transform: translateX( -50% );
+    
+    transition: all 0.5s ease 0s;
+    /* overflow: hidden;  */
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
 
 }
 
 header>#inner>.logoTop{
     text-align: center;
+<<<<<<< HEAD
     margin-top: 60px;
     margin-bottom: 60px;    
 }
@@ -140,22 +188,59 @@ nav>li:hover>ul{
 .menuBar>nav>ul>li>ul>li:nth-child(1){
     border: 1px solid rgb(26, 255, 0);
     margin-top: 44px;
+=======
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
 }
+
+.menuA{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
+}
+
+
+.menuBar> nav > ul:hover .menuB{    
+    display: block;
+    background: #fff;   
+    }
+
+
+
+
+.menuBar>nav>ul>li>ul>li{
+    border: 1px solid rgb(26, 255, 0);
+    margin-top: 20px;}
+
 
 .menuBar{
     border: 1px solid red;    
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+<<<<<<< HEAD
     text-align: center;    
     margin-right: 100px;
     margin-left: 100px;    
+=======
+    text-align: center;
+
+    padding-right: 100px;
+    padding-left: 100px;
+    background: #fff;
+    transition: all 0.5s ease 0s;
+   
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
 
 }
 
 
 .menuBar> nav > ul{
-    border: 1px solid rgb(0, 225, 255);
+    /* border: 1px solid rgb(0, 225, 255); */
     font-family: Pretendard;
     font-size:17px;
     font-weight: 300;
@@ -165,9 +250,20 @@ nav>li:hover>ul{
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    margin-top: 20px;   
+    margin-top: 20px;
+    margin-bottom: 20px;
        
 }
+<<<<<<< HEAD
+=======
+.menuBar> nav > ul > li {
+    /* border: 1px solid red; */
+    width: 150px;
+    font-size: 17px;
+    display: block;
+    
+}
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
 
 .menuBar> nav > ul >h4{
     border: 1px solid rgb(0, 225, 255);
@@ -179,18 +275,27 @@ nav>li:hover>ul{
     margin-top: 45px;
 }
 
+<<<<<<< HEAD
 
 .menuBar> nav > ul> li> ul> li{
+=======
+ .menuBar> nav > ul> li> ul{
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
     border: 1px solid red;
     margin: 20px auto;
     text-align: center;
     margin: 25px 0;
+<<<<<<< HEAD
     font-weight: 400;
     /* display: none; */
+=======
+    display: none;
+>>>>>>> 147092d5a01385a31210e97d30dc5c1dd4009f79
 
 }
 
 /* ------------------------------------------------------- */
+
 
 .searchBar{
     border: 1px solid gray;
@@ -198,6 +303,7 @@ nav>li:hover>ul{
     width: 270px;
     height: 42px;
     margin-right: 40px;
+    
 }
 
 .menuBar > .searchBar > a > img{
@@ -227,6 +333,6 @@ main> .mainBanner{
 }
 
 main>mainBanner>.cd{
-    position: absolute;
+    /* position: absolute; */
 }
 
