@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnson & Johnson</title>
-    <link rel="stylesheet" href="./CSS/jo.css">   
+    <link rel="stylesheet" href="./CSS/jo.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./jo.js"></script>
 </head>
 <body>
     <div class="container">    
         <header>                   
             <div class="logoTop">
                 <h1>
-                    <img src="./img/johnson's.png" alt="존슨즈 로고" height="60px">
+                    <img src="./img/johnson's.png" alt="존슨즈 로고" height="55px">
                 </h1>
             </div>
             
@@ -49,28 +56,31 @@
                     <a href="#">
                         <img src="./img/reading glasses.png" alt="돋보기" width="26px">
                     </a>
-                </div>
-                <div class="line"></div>
-            </div>
-            
+                </div>                
+            </div>            
         </header>
         <main>
-            <div class="mainBanner">
-                <!-- <div class="cd">
-                    <h3>CHOOZE GENTLE</h3>
-                    <h2>아기와 지구를<br>
-                        위해 순하게</h2> -->
-                <!-- </div> -->
-                <div class="ab">
-                    <ul class="topB">
-                        <!-- <li><img src="./img/banner01.png" alt="메인배너1" width="1920PX" height="600PX"></li> -->
-                        <!-- <li>slide 2</li>                 -->
-                    </ul>
-                    <ul class="pagination">
-                        <li class="on">1</li>
-                        <li>2</li>                    
+            <div class="mainBanner">              
+                <div class="station1 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./img/banner01.png" alt="1" width="1920px" height="600px">
+                            <div class="slideTxt">
+                                <h3>CHOOZE GENTLE</h3>
+                                <h2>아기와 지구를<br> 위해 순하게</h2>
+                                <p><a href="#">VIEW MORE</a></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./img/img/img2.jpg" alt="2">
+                            <div class="slideTxt">
+                                <h3>title2</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia obcaecati et dignissimos exercitationem ea. Ipsum modi ullam, illum saepe, nobis cumque deserunt animi pariatur, accusamus sequi error? Dolorem, repudiandae expedita?</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+                <div class="swiper-pagination"></div>  
             </div>
             <div></div>
             <div></div>

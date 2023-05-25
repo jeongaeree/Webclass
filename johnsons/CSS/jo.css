@@ -67,31 +67,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     font-weight: 900;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Jal_Haru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
 /* headerlayout */
 
-html{   
-    font-size: 17px;
-    
-    
-   
-}
+html{font-size: 17px;}
 
 .container{    
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1920px;
-    height: 200px;    
+    height: 190px;    
     margin:0 auto;
 }
 
-
-
 header{
     width: 1920px;
-    height: 200px;
-    border: 5px solid red;
+    height: 190px;
+    /* border: 5px solid red; */
     background: #fff;       
     margin:0 auto;    
     z-index: 100;
@@ -100,8 +99,18 @@ header{
     left: 50%;    
     transform: translateX( -50% );    
     transition: all 0.5s ease 0s;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 
+}
+
+header:after{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #949494;
 }
 
 header>.logoTop{
@@ -111,43 +120,35 @@ header>.logoTop{
     
 }
 
-.menuA{
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    
-}
-
-.line{
-    border-bottom: 1px solid red;
-}
-
-
-.menuBar> nav > ul:hover .menuB{    
+.menuBar> nav > ul:hover .menuB{ 
+     
     display: block;
+    color: black;
     background: #fff;   
     }
 
+
+.menuBar> nav > ul>li>ul>li:hover{    
+    color: rgb(32, 32, 32);
+    font-weight: 500;}
 
 
 
 .menuBar>nav>ul>li>ul>li{
     border: 1px solid rgb(26, 255, 0);
-    margin-top: 20px;}
+    font-size: 16px;
+    margin-top: 15px;}
 
 
 .menuBar{
-    border: 1px solid red;
-    
+    width: 100%;
+    border: 1px solid red;    
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    text-align: center;
-   
+    text-align: center;  
     background: #fff;
     transition: all 0.5s ease 0s;
-   
 
 }
 
@@ -157,36 +158,37 @@ header>.logoTop{
     font-family: Pretendard;
     font-size:19px;
     font-weight: 300;
-    color: rgb(35, 35, 35);
+    color: rgb(35, 35, 35);    
     width: 930px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 110px;
+    
+    
        
 }
 .menuBar> nav > ul > li {
-    /* border: 1px solid red; */
-    width: 150px;
+    border: 1px solid red;
+    width: 160px;
     font-size: 17px;
-    display: block;
+    display: inline-block;
+    line-height: 42px;
+    
     
 }
 
 .menuBar> nav > ul >h4{
-    border: 1px solid rgb(0, 225, 255);
-    margin-bottom: 20px;
-
+    border: 1px solid rgb(0, 225, 255);    
 }
 
 
  .menuBar> nav > ul> li> ul{
     border: 1px solid red;
-    margin: 20px auto;
+    margin:20px 0;
     text-align: center;
-    margin: 25px 0;
+    color: #949494;   
     display: none;
 
 }
@@ -199,7 +201,9 @@ header>.logoTop{
     border-radius: 30px;
     width: 270px;
     height: 42px;
-    margin-right: 40px;
+    margin-right: 160px;
+    
+    line-height: 42px;
     /* margin-left: 100px; */
     
 }
@@ -213,24 +217,76 @@ header>.logoTop{
     
 }
 
-/* ------------------------------------------------- */
+/* ---------------------main---------------------------- */
 
-main> .mainBanner{
-    /* border: 1px solid blue; */
-    width: 1920px;
+.swiper.station1{
+    width: 100%;
     height: 600px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    top: 190px;
+    left: 0;
+    border: 1px solid red;
 }
 
-.topB{
-    width: 100%;
-    transition: all 1s ease 0s;
-    transform: translateY(0%);
+.slideTxt> h3{
+    font-family: 'Pretendard';
+    font-size: 20px;
+    font-weight: 900px;
+    position: absolute;
+    
+    left: 160px;
+    bottom: 20px;
+    border: 2px solid lime;
+    
+    color: rgba(115, 172, 218);
+    /* padding: 10px;     */
+    transform: translateY(-360px);
+
 }
 
-main>mainBanner>.cd{
-    /* position: absolute; */
+
+.slideTxt>h2{
+    font-family: Jal_Haru;
+    font-size: 80px;
+    font-weight: 700px;
+    position: absolute;
+    
+    left: 160px;
+    bottom: 20px;
+    border: 2px solid lime;    
+    color: rgb(31, 31, 31);
+      
+    transform: translateY(-200px);
+
 }
 
+
+
+
+
+
+/* main> .mainBanner{
+    /* border: 1px solid blue; */
+    /* width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 190px;
+    left: 0; */
+
+
+.ab> h3{
+    border: 1px solid red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+}
+
+.ab> h2{
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+} 
