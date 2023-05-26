@@ -123,7 +123,7 @@ header>.logoTop{
 
 
 .menuBar> nav > ul > li{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-decoration-line: 3px solid blue;
     transition: all 0.5s ease 0s;
 
@@ -135,17 +135,15 @@ header>.logoTop{
     text-decoration-line: 3px solid blue;
     display: block;
     transition: all 0.5s ease 0s;
-     
-    /* display: block;
-    color: black;
-    background: #fff;    */
-    }
+}
+ 
 
 .menuBar> nav > ul:hover .menuB{ 
      
     display: block;
     color: black;
     background: #fff;
+   
     
     }
 
@@ -299,30 +297,48 @@ header>.logoTop{
 
 
 
-
-
-
-/* main> .mainBanner{
-    /* border: 1px solid blue; */
-    /* width: 1920px;
+.swiper.station1{
+    width: 100%;
     height: 600px;
-    margin: 0 auto;
-    position: relative;
-    top: 190px;
-    left: 0; */
-
-
-.ab> h3{
     border: 1px solid red;
+}
+
+.station1>.train>li{
+    border: 1px solid blue;
+    position: relative;
+}
+
+.station1>.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideTxt{
     position: absolute;
-    top: 100px;
-    left: 0;
+    width: 80%;
+    left: 20px;
+    bottom: 20px;
+    border: 1px solid lime;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    transition: all 0.5s ease 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
 
 }
 
-.ab> h2{
-    position: absolute;
-    top: 200px;
-    left: 0;
+.station1>.train>li.swiper-slide-active .slideTxt{
+    opacity: 1;
+    transform: translateY(0px);
+}
 
-} 
+/* .station1 .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+}
+.station1 .swiper-pagination {    
+    background: orange;
+} */
+
