@@ -240,8 +240,7 @@ header>.logoTop{
 
 
 main{
-    width:1920px;
-    height: 4500px;
+    width:1920px;    
     border: 1px solid red;
     padding-top: 190px;
    
@@ -400,7 +399,7 @@ main{
 }
 
 .mainF> .partoneTop > h2{
-    font-family: 'Pretendard';
+    /* font-family: 'Pretendard'; */
     font-weight: 600;
     font-size: 45px;
     margin-bottom: 50px;
@@ -414,16 +413,6 @@ main{
 .mainF> .partoneTop > img{
     height: 109px;    
 }
-
-
-/* .mainF>.partoneMid{
-    margin: 0 auto;
-    text-align: center;
-} */
-
-/* .mainF>.partoneMid>section>img{
-    width: 900PX;
-} */
 
 .mainF>.partoneBot{
     
@@ -520,13 +509,13 @@ main{
 }
 
 .mainB>ul>li>div{
-    display: block;     
-    width: 59px;
-    height: 59px;
+    display: block;
+    width: 55px;
+    height: 55px;
     border: 1px solid red;
     background: #fff;
     border-radius: 30px;
-    transform: translateX(80%);
+    transform: translateX(867px) translateY(28px);
 }
 
 .mainB>ul>li>h5{   
@@ -534,20 +523,51 @@ main{
     font-size: 31px;
     font-weight: 600;
     margin-bottom: 20px;
-    display: block;
-    transform: translateX(1000px);
-    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 footer{
     width: 1920px;
-    height: 485px;
-    padding-top: 190px;
+    height: 400px;
+    padding-top: 170px;
     border: 1px solid rgb(0, 166, 255);
-    /* position: relative; */
-    /* top: 100%; */
+    background: rgb(115, 172, 218);
+   
+    
+    
 }
 
 footer>.logoBot>h1>img{
     
+    
+}
+
+footer>div>ul{
+    margin-left: 390px;
+    margin-right: 390px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    /* margin-right: 245px; */
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+footer>.logoBot>h1{
+    width: 190px;
+    display: block;
+    margin: 0 auto;    
+    margin-bottom: 40px;
+    
+}
+
+footer>.adress>p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 130%;
 }

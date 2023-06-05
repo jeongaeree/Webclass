@@ -1,0 +1,322 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
+
+/* font */
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jal_Haru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* --------------------------- headerlayout----------------------------- */
+
+html{font-size: 17px;}
+.container{    
+    /* border: 1px solid red; */
+    width: 1920px;
+    height: 190px;    
+    margin:0 auto;
+}
+
+header{
+    /* width: 1920px;
+    height: 190px; */
+    /* border: 5px solid red; */
+    background: #fff;       
+    margin:0 auto;    
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;    
+    transform: translateX( -50% );    
+    transition: all 0.5s ease 0s;
+    /* overflow: hidden;  */
+    
+
+}
+
+header:after{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(28, 143, 201);;
+    
+}
+
+header>.logoTop{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+
+.menuBar> nav > ul > li{
+    /* border: 1px solid red; */
+    text-decoration-line: 3px solid blue;
+    margin-top: 10px;
+    transition: all 0.5s ease 0s;
+
+}
+
+.menuBar> nav > ul > li:hover{ 
+
+    color: rgba(28,143,201);
+    text-decoration-line: 3px solid blue;
+    display: block;
+    transition: all 0.5s ease 0s;
+}
+ 
+
+.menuBar> nav > ul:hover .menuB{ 
+     
+    display: block;
+    color: black;
+    background: #fff;
+   
+    
+    }
+
+
+.menuBar> nav > ul>li>ul>li:hover{    
+    color: rgb(32, 32, 32);
+    font-weight: 500;}
+
+
+
+
+
+.menuBar>nav>ul>li>ul>li{
+    /* border: 1px solid rgb(26, 255, 0); */
+    font-size: 16px;
+    margin: 5px 0;}
+
+
+.menuBar{
+    width: 100%;
+    /* border: 1px solid red;     */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;  
+    background: #fff;
+    
+    transition: all 0.5s ease 0s;
+
+}
+
+
+.menuBar> nav > ul{
+    /* border: 1px solid rgb(0, 225, 255); */
+    font-family: Pretendard;
+    font-size:19px;
+    font-weight: 300;
+    color: rgb(35, 35, 35);    
+    width: 930px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 110px;
+    
+    
+       
+}
+.menuBar> nav > ul > li {
+    /* border: 1px solid red; */
+    width: 160px;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 42px;
+    
+    
+}
+
+.menuBar> nav > ul >h4{
+    border: 1px solid rgb(0, 225, 255);    
+}
+
+
+ .menuBar> nav > ul> li> ul{
+    /* border: 1px solid red; */
+    margin:35px 0;
+    text-align: center;
+    color: #949494;   
+    display: none;
+
+}
+
+
+
+
+.searchBar{
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 270px;
+    height: 42px;
+    margin-right: 160px;
+    
+    line-height: 42px;
+    /* margin-left: 100px; */
+    
+}
+
+.menuBar > .searchBar > a > img{
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: 230px;
+    position: absolute;
+    margin-top: 7px;
+    
+}
+/* -------------------------------------------------- */
+
+main>.suboneTop_M{
+    width: 1920px;
+    height: 770px;
+    position: relative;}
+
+
+main>.suboneTop_M>img{
+    width: 1920px;
+    height: 770px;
+    
+}
+
+main>.suboneTop_M>h1{
+    position: absolute;
+    font-size: 73px;
+    text-align: left;
+    color: #fff;
+    top: 322px;
+    left: 160px;
+}
+
+main>.suboneTop_M>p{
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    color: #fff;
+    top: 435px;
+    left: 160px;
+    line-height: 130%;
+}
+
+main>.suboneMid_M{
+    height: 2350px;
+    position: relative;
+    padding-top: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main>.suboneMid_M:after{
+    content: "";
+    width: 1px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background:#4b91cb;
+    position: absolute;
+
+}
+
+main>.suboneMid_M>h2{
+    color: #4b91cb;
+    font-size: 46px;
+    font-weight: 500;    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main>.suboneMid_M>h3{
+    color: #1b1b1b;
+    font-size: 31px;
+    font-weight: 500;    
+    text-align: center;
+    margin-bottom: 60px;
+    
+
+}
+
+main>.suboneMid_M>img{
+    width: 876px;
+    margin-bottom: 80px;
+    /* margin: 0 auto;
+    display: block; */
+    /* transform: translateX(50%); */
+}
+
+main>.suboneMid_M>p{
+    font-size: 28px;
+    line-height: 160%;
+}
+
+main>.suboneMid_M>p span{
+    font-weight: 600;
+}
