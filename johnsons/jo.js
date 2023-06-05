@@ -12,7 +12,7 @@ window.onload = function(){
        },
        
        autoplay:{
-         delay:1000,
+         delay:2500,
          pauseOnMouseEnter:true
        }, 
     })

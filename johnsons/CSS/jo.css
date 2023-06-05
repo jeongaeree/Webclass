@@ -6,14 +6,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
 /* font */
 
 @font-face {
-	font-family: 'Pretendard Variable';
-	font-weight: 45 920;
-	font-style: normal;
-	font-display: swap;
-	src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
-}
-
-@font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Thin.woff') format('woff');
     font-weight: 100;
@@ -78,7 +70,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
 
 /* headerlayout */
 
-html{font-size: 17px;}
+html{font-size: 17px;
+    font-family: 'Pretendard';}
 
 .container{    
     /* border: 1px solid red; */
@@ -104,15 +97,16 @@ header{
 
 }
 
-/* header:after{
+header:after{
     position: absolute;
     top: 190px;
     left: 0;
     content: "";
     width: 100%;
     height: 1px;
-    background: #949494;
-} */
+    background: rgba(28, 143, 201);;
+    
+}
 
 header>.logoTop{
     text-align: center;
@@ -125,6 +119,7 @@ header>.logoTop{
 .menuBar> nav > ul > li{
     /* border: 1px solid red; */
     text-decoration-line: 3px solid blue;
+    margin-top: 10px;
     transition: all 0.5s ease 0s;
 
 }
@@ -151,6 +146,8 @@ header>.logoTop{
 .menuBar> nav > ul>li>ul>li:hover{    
     color: rgb(32, 32, 32);
     font-weight: 500;}
+
+
 
 
 
@@ -218,6 +215,7 @@ header>.logoTop{
 
 
 .searchBar{
+    margin-top: 5px;
     border: 1px solid gray;
     border-radius: 30px;
     width: 270px;
@@ -240,12 +238,21 @@ header>.logoTop{
 
 /* ---------------------main---------------------------- */
 
+
+main{
+    width:1920px;
+    height: 4500px;
+    border: 1px solid red;
+    padding-top: 190px;
+   
+}
+
 .swiper.station1{
     width: 100%;
     height: 600px;
     margin: 0 auto;
     position: relative;
-    top: 190px;
+    top: 0;
     left: 0;
     /* border: 1px solid red; */
 }
@@ -256,7 +263,7 @@ header>.logoTop{
     font-weight: 900px;
     position: absolute;
     
-    left: 160px;
+    left: 200px;
     bottom: 20px;
     border: 2px solid lime;
     
@@ -273,7 +280,7 @@ header>.logoTop{
     font-weight: 700px;
     position: absolute;
     
-    left: 160px;
+    left: 200px;
     bottom: 20px;
     border: 2px solid lime;    
     color: rgb(31, 31, 31);
@@ -282,13 +289,26 @@ header>.logoTop{
 
 }
 
-.slideTxt> p{
+.slideTxt> .first{
     position: absolute;
-    left: 160px;
+    left: 200px;
     width: 190px;
     height: 60px;
     color: #fff;
     background: rgba(115, 172,218);
+    transform: translateY(-160px);
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.slideTxt> .second{
+    position: absolute;
+    left: 200px;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+    background: rgba(90, 100, 216);
     transform: translateY(-160px);
     text-align: center;
     line-height: 60px;
@@ -319,9 +339,7 @@ header>.logoTop{
     width: 80%;
     left: 20px;
     bottom: 20px;
-    border: 1px solid lime;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    
     padding: 10px;
     transition: all 0.5s ease 0.5s;
     opacity: 0;
@@ -342,3 +360,194 @@ header>.logoTop{
     background: orange;
 } */
 
+
+.slideTxt .momore{
+    font-family: 'Pretendard';
+    font-weight: 900px;
+
+}
+
+
+
+ .mainF> .partoneTop{
+    width: 1920PX;
+    margin-top: 200PX;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+
+
+.mainF> .partoneTop > h4 {
+    font-family: 'Pretendard';
+    font-size: 26px;
+    font-weight: 700;
+    border: 1px solid rgba(28, 143, 201);
+    background: rgba(28, 143, 201);
+    color: #fff;
+    width: 100px; 
+    height: 45px;
+    border-radius: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 20PX;    
+    display: inline-block;
+}
+
+.mainF> .partoneTop > h1 {
+    margin-bottom: 100px;
+}
+
+.mainF> .partoneTop > h2{
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+
+.mainF> .partoneTop > h2 > span{
+    color: rgba(115, 172, 218);
+}
+
+.mainF> .partoneTop > img{
+    height: 109px;    
+}
+
+
+/* .mainF>.partoneMid{
+    margin: 0 auto;
+    text-align: center;
+} */
+
+/* .mainF>.partoneMid>section>img{
+    width: 900PX;
+} */
+
+.mainF>.partoneBot{
+    
+    border: 1px solid red;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    /* height: 1700px; */
+    background: url('../img/circle-04.png') no-repeat;
+    background-size: 901px 1042px;
+    background-position: 50% 50%;
+    font-family: 'rpet';
+    display:flex;
+    justify-content: space-between;
+}
+
+.mainF>.partoneBot>section>h3{
+    font-family: 'Pretendard';
+    font-weight: 600;    
+    color: rgba(28, 143, 201);
+    font-size: 58px;
+    margin-bottom: 20px;
+    
+}
+
+
+.mainF>.partoneBot>section>p{
+    font-family: 'Pretendard';
+    font-size: 32px;
+    line-height: 120%;
+
+}
+
+.mainF>.partoneBot>section>h4{
+    font-family: 'Pretendard';
+    color: rgba(28, 143, 201);
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.mainF>.partoneBot>.a{
+    position:relative;
+    top: 300px;
+    left: 100px;
+}
+
+.mainF>.partoneBot>.b{
+    border: 1px solid red;
+    text-align: right;
+    position:relative;
+    top: 40%;
+    right: 100px;
+}
+
+.mainB{
+    height: 5000px;
+    background: #D9F1FF;
+    text-align: center;
+}
+
+.mainB>h1>img{
+    margin-top: 130px;
+    margin-bottom: 25px;
+    width: 50px;
+}
+
+.mainB>h2{    
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;   
+    margin-bottom: 25px;
+    
+}
+/* ------------------mainB-------------------- */
+.mainB>h2>span{
+    background-color:rgba(0, 121, 193);
+    color: white;
+    padding: 2px 5px;
+}
+
+.mainB>ul>li>h3{
+    display: block; 
+    font-size: 43px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 40px;    
+}
+
+.mainB>ul>li>p{    
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 300px;
+    
+}
+
+.mainB>ul>li>div{
+    display: block;     
+    width: 59px;
+    height: 59px;
+    border: 1px solid red;
+    background: #fff;
+    border-radius: 30px;
+    transform: translateX(80%);
+}
+
+.mainB>ul>li>h5{   
+    color:rgba(28, 143, 201); 
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    transform: translateX(1000px);
+    
+}
+
+footer{
+    width: 1920px;
+    height: 485px;
+    padding-top: 190px;
+    border: 1px solid rgb(0, 166, 255);
+    /* position: relative; */
+    /* top: 100%; */
+}
+
+footer>.logoBot>h1>img{
+    
+}
