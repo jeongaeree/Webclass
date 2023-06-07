@@ -23,12 +23,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     font-weight: 300;
     font-display: swap;
 }
-@font-face {
+/* @font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-display: swap;
-}
+} */
 @font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Medium.woff') format('woff');
@@ -200,7 +200,7 @@ header>.logoTop{
 }
 
 
- .menuBar> nav > ul> li> ul{
+.menuBar> nav > ul> li> ul{
     /* border: 1px solid red; */
     margin:35px 0;
     text-align: center;
@@ -235,46 +235,46 @@ header>.logoTop{
 }
 /* -------------------------------------------------- */
 
-main>.suboneTop_M{
+#main_sub1>.suboneTop_M{
     width: 1920px;
     height: 770px;
+    padding-top: 190px;
     position: relative;}
 
-
-main>.suboneTop_M>img{
+#main_sub1>.suboneTop_M>img{
     width: 1920px;
     height: 770px;
     
 }
-
-main>.suboneTop_M>h1{
+#main_sub1>.suboneTop_M>h1{
     position: absolute;
     font-size: 73px;
     text-align: left;
     color: #fff;
-    top: 322px;
+    top: 455px;
     left: 160px;
 }
 
-main>.suboneTop_M>p{
+#main_sub1>.suboneTop_M>p{
     position: absolute;
     font-size: 30px;
     text-align: left;
     color: #fff;
-    top: 435px;
+    top: 580px;
     left: 160px;
     line-height: 130%;
 }
 
-main>.suboneMid_M{
-    height: 2350px;
+#main_sub1>.suboneMid_M{
+   
     position: relative;
     padding-top: 280px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
-main>.suboneMid_M:after{
+#main_sub1>.suboneMid_M:after{
     content: "";
     width: 1px;
     height: 230px;
@@ -286,7 +286,7 @@ main>.suboneMid_M:after{
 
 }
 
-main>.suboneMid_M>h2{
+#main_sub1>.suboneMid_M>h2{
     color: #4b91cb;
     font-size: 46px;
     font-weight: 500;    
@@ -294,7 +294,7 @@ main>.suboneMid_M>h2{
     margin-bottom: 10px;
 }
 
-main>.suboneMid_M>h3{
+#main_sub1>.suboneMid_M>h3{
     color: #1b1b1b;
     font-size: 31px;
     font-weight: 500;    
@@ -304,7 +304,7 @@ main>.suboneMid_M>h3{
 
 }
 
-main>.suboneMid_M>img{
+#main_sub1>.suboneMid_M>img{
     width: 876px;
     margin-bottom: 80px;
     /* margin: 0 auto;
@@ -312,11 +312,116 @@ main>.suboneMid_M>img{
     /* transform: translateX(50%); */
 }
 
-main>.suboneMid_M>p{
+#main_sub1>.suboneMid_M>p{
     font-size: 28px;
     line-height: 160%;
 }
 
-main>.suboneMid_M>p span{
+#main_sub1>.suboneMid_M>p span{
     font-weight: 600;
 }
+
+#main_sub1>.suboneMid_M>.aaa{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+   
+}
+
+#main_sub1>div>.icon{
+    height: 434px;
+    background: #95c5e9;
+    align-items: center;
+    /* display: flex; */
+}
+
+#main_sub1>div>.icon>ul{
+    padding:132px 300px;
+    border: 1px solid red;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+#main_sub1>div>.icon>ul img{
+    width: 104px;
+    margin-bottom: 20px;
+}
+
+#main_sub1>.suboneMid_M ul>li:after{    
+    content: "";
+    position: absolute;
+    width: 204px;
+    height: 314px;
+    border: 1px solid #fff;    
+    top: 58px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    
+}
+
+#main_sub1>.suboneMid_M ul>li:last-child:after{
+    display:none;
+}
+
+#main_sub1>.suboneMid_MM{
+    border: 1px solid red;
+    background: #d2edff;   
+    height: 2275px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding:240px 275px;
+}
+
+#main_sub1>.suboneMid_MM>h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+#main_sub1>.suboneMid_MM>p{
+    font-size: 40px;
+    margin-bottom: 90px;
+
+}
+
+
+
+#main_sub1>.suboneMid_MM li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-right: 60px;
+}
+
+
+
+#main_sub1>.suboneMid_MM li>img{
+    width: 242px;
+    border: 6px solid #7bbae8;
+    border-radius: 121px;
+    position: absolute;
+    left: 173px;
+    background-color: #fff;
+}
+
+
+#main_sub1>.suboneMid_MM li> p{
+    width: 1300px;
+    height: 205px;
+    border-radius: 150px;
+    padding-top: 60px;
+    box-sizing: border-box;    
+    border: 6px solid #7bbae8;
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+#main_sub1>.suboneMid_MM li>.three{
+    padding-top: 30px;}
