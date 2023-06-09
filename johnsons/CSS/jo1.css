@@ -71,17 +71,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
 /* --------------------------- headerlayout----------------------------- */
 
 html{font-size: 17px;}
-.container{    
-    /* border: 1px solid red; */
+.container{      
     width: 1920px;
     height: 190px;    
-    margin:0 auto;
+    margin:0 auto;   
 }
 
-header{
-    /* width: 1920px;
-    height: 190px; */
-    /* border: 5px solid red; */
+header{    
     background: #fff;       
     margin:0 auto;    
     z-index: 100;
@@ -90,9 +86,6 @@ header{
     left: 50%;    
     transform: translateX( -50% );    
     transition: all 0.5s ease 0s;
-    /* overflow: hidden;  */
-    
-
 }
 
 header:after{
@@ -109,17 +102,14 @@ header:after{
 header>.logoTop{
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;    
 }
-
 
 .menuBar> nav > ul > li{
     /* border: 1px solid red; */
     text-decoration-line: 3px solid blue;
     margin-top: 10px;
     transition: all 0.5s ease 0s;
-
 }
 
 .menuBar> nav > ul > li:hover{ 
@@ -131,19 +121,17 @@ header>.logoTop{
 }
  
 
-.menuBar> nav > ul:hover .menuB{ 
-     
+.menuBar> nav > ul:hover .menuB{      
     display: block;
     color: black;
-    background: #fff;
-   
-    
-    }
+    background: #fff;   
+}
 
 
 .menuBar> nav > ul>li>ul>li:hover{    
     color: rgb(32, 32, 32);
-    font-weight: 500;}
+    font-weight: 500;
+}
 
 
 
@@ -411,7 +399,7 @@ header>.logoTop{
 .sub_c>ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 108px;
     position: relative;
     border-radius: 205px;
     height: 177px;
@@ -420,11 +408,6 @@ header>.logoTop{
     justify-content: center;
 }
 
-
-
-.sub_c>ul li>div{
-    
-}
 
 .sub_c>ul p{
     /* width: 1000px; */
@@ -435,35 +418,68 @@ header>.logoTop{
     /* transform: translateX(190px); */
 }
 
-/* .sub_c>ul .a{
-    width: 1000px; 
-    border: 1px solid red;    
-    text-align: center;    
-    padding-top: 50px;
-    font-size: 29px;
-    transform: translateX(190px);  
-} */
+
 /* ------------sub_d----------------- */
 .sub_d{
     width: 1920px;
-    height: 2340px;
+    height: 2800px;
     background: #fff;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    
 }
 
 .sub_d h1{
-    font-size: 86px;
+    font-size: 70px;
     color: #7bbae8;
+    transform: translateY(250px);
+    /* position: absolute;     */
+    
 }
 
-.sub_d h1::after{
+.sub_d::after{
     content: "";
     width: 1px;
     height: 230px;
     background: #4b91cb;
-    position: absolute;    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);   
 }
+
+
+
+.sub_d h2 span{
+    font-size: 80px;
+}
+
+.sub_d h2{
+    font-size: 80px;
+    transform: translatey(370px);
+}
+
+.sub_d img{
+    transform: translateY(500px);
+    width: 800px;
+
+}
+
+.sub_d p{
+    transform: translateY(750px);
+    font-size: 38px;
+    line-height: 150%;
+}
+
+.sub_d span{
+    transform: translateY(800px);
+    font-size: 50px;
+    /* line-height: 200%; */
+}
+
+.sub_d p span{font-weight: 700;}
+
 
 
 
