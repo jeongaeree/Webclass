@@ -216,7 +216,8 @@ header>.logoTop{
 
 .searchBar{
     margin-top: 5px;
-    border: 1px solid gray;
+    background: #f1f0f0;
+    /* border: 1px solid gray; */
     border-radius: 30px;
     width: 270px;
     height: 42px;
@@ -248,7 +249,7 @@ main{
 
 .swiper.station1{
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     position: relative;
     top: 0;
@@ -268,7 +269,7 @@ main{
     
     color: rgba(115, 172, 218);
     /* padding: 10px;     */
-    transform: translateY(-390px);
+    transform: translateY(-420px);
 
 }
 
@@ -284,7 +285,7 @@ main{
     border: 2px solid lime;    
     color: rgb(31, 31, 31);
       
-    transform: translateY(-180px);
+    transform: translateY(-200px);
 
 }
 
@@ -318,7 +319,7 @@ main{
 
 .swiper.station1{
     width: 100%;
-    height: 600px;
+    height: 700px;
     border: 1px solid red;
 }
 
@@ -515,7 +516,7 @@ main{
     border: 1px solid red;
     background: #fff;
     border-radius: 30px;
-    transform: translateX(867px) translateY(28px);
+    transform: translateX(871px) translateY(28px);
 }
 
 .mainB>ul>li>h5{   
@@ -923,7 +924,7 @@ footer>.adress>p{
 /* ----------------------------- */
 .sub_cc{
     width: 1920px;
-    height: 1570px;
+    height: 1980px;
     margin: 0 auto;
     background: #efefef;
     text-align: center;
@@ -1021,6 +1022,120 @@ footer>.adress>p{
     font-weight: 600;
 }
 
+.sub_dd{
+    width: 1920px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sub_dd img{
+    width: 1920px;
+    height: 1000px;
+}
+
+.sub_dd h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 60px;
+
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------sub_4----------------- */
+
+
+#main_sub4{
+    width: 1920px;
+    height: 2774px;
+    margin: 0 auto;
+    padding-top: 190px;
+    text-align: center;
+    
+}
+
+
+.subfour>h1{
+    font-size: 21px;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+
+.subfour>.all_menu{
+    width: 1116px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 150px auto;
+}
+
+.subfour li{
+    width: 165px;
+    height: 55px;
+    border: 1px solid #969696;
+    line-height: 55px;
+}
+
+.sub_bbbb ul {
+    display: flex;
+    width: 1580px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub_bbbb ul li {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.sub_bbbb ul h5{
+    margin-bottom: 10px;
+}
+
+.sub_bbbb ul img{
+    width: 357px;
+    height: 324px;
+}
+
+.sub_bbbb ul div{
+    /* margin-top: 20px;
+    margin-bottom: 5px; */
+    width: 63px;
+    height: 27px;
+    font-size: 13px;
+    border-radius: 20px;
+    background: #4b91cb;
+    margin: 0 auto 10px auto;
+}
+
+
+.sub_bbbb ul div p{    
+    font-size: 13px;
+    color: white;
+    line-height: 27px;
+}
+
+.sub_bbbb ul li>.nono{
+   background: white;
+}
 
