@@ -1065,7 +1065,7 @@ footer>.adress>p{
 
 #main_sub4{
     width: 1920px;
-    height: 2774px;
+    height: 4000px;
     margin: 0 auto;
     padding-top: 190px;
     text-align: center;
@@ -1094,20 +1094,36 @@ footer>.adress>p{
     line-height: 55px;
 }
 
-.sub_bbbb ul {
-    text-align: ce;
-    display: flex;
+.sub_bbbb ul{
     width: 1580px;
-    margin: 0 auto;
+    display:flex;       
     flex-wrap: wrap;
-    justify-content:flex-start;
-    flex: 1;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+    /* justify-content:flex-start; */
+    /* align-items:center;     */
+    
+    
 }
 
-.sub_bbbb ul li {
+
+.sub_bbbb ul li{
+    width: 400px;
+    height: 600px;
     text-align: center;
-    margin-bottom: 120px;   
+    margin-bottom: 120px;
+    margin-right: 190px;
+    
 }
+
+.sub_bbbb ul li:nth-child(3){margin-right: 0;}
+.sub_bbbb ul li:nth-child(6){margin-right: 0;}
+.sub_bbbb ul li:nth-child(9){margin-right: 0;}
+.sub_bbbb ul li:nth-child(12){margin-right: 0;}
+
 
 
 .sub_bbbb ul h5{
@@ -1116,18 +1132,18 @@ footer>.adress>p{
 
 .sub_bbbb ul img{
     transform: translateY(25px);
-    width: 357px;
-    height: 324px;
+    width: 400px;
+    height: 380px;
     
     
 }
-.sub_bbbb ul li>.back{
-    width: 357px;
-    height: 357px;
+.sub_bbbb ul li>.back{    
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background: #f5f5f5;
     margin-bottom: 30px;
-    position: relative;   
+    /* position: relative;    */
 }
 
 .sub_bbbb ul .pink{
@@ -1165,5 +1181,9 @@ footer>.adress>p{
 
 .sub_bbbb ul li>.nono{
    background: white;
+}
+
+.sub_bbbb ul li .wid{    
+    width: 250px;
 }
 
