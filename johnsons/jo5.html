@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnson & Johnson</title>
+    <script src="./js/product.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="./CSS/jo.css">    
     <link
   rel="stylesheet"
@@ -13,6 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
 <script src="./jo.js"></script>
+<script src="./js/jo5.js"></script>
 </head>
 <body style="overflow-x: hidden">
     <div class="container">    
@@ -63,99 +66,88 @@
             <div class="subfour">
                 <h1>ALL</h1>
                 <ul class="all_menu">
-                    <li>바스</li>
-                    <li>샴푸</li>
-                    <li>로션</li>
-                    <li>크림</li>
-                    <li>오일</li>
-                    <li>파우더</li>
+                    <li data-cate="all" class="on">전체</li>
+                    <li data-cate="bath">바스</li>
+                    <li data-cate="shampoo">샴푸</li>
+                    <li data-cate="lotion">로션</li>
+                    <li data-cate="cream">크림</li>
+                    <li data-cate="oil">오일</li>
+                    <li data-cate="powder">파우더</li>
                 </ul>
             </div>
             <div class="sub_bbbb">
-                <ul>
-                    <li>
+                <ul class="product_ul">
+                    <li class="bath">
                         <div class="back"><a href="#"><img src="./img/icon/bedtime.png" alt="베드타임™ 베이비 바스"></a></div>  
                         <h5><a href="#">베드타임™<br>베이비 바스</a></h5>
                         <div class="pink"><p>유아용</p></div>
-                        <!-- <div></div>                         -->
                     </li>
-                    <li>
+                    <li class="bath">
                         <div class="back"><a href="#"><img src="./img/icon/toptuto-05-removebg-preview.png" alt="탑투토™ 베이비 바스"></a></div>
                         <h5><a href="#">탑투토™<br>베이비 바스</a></h5>
-                        <div class="skyblue"><p>신생아용</p></div>
-                        <!-- <div></div> -->
+                        <div class="skyblue"><p>신생아용</p></div>                        
                     </li>
-                    <li>
+                    <li class="bath">
                         <div class="back"><a href="#"><img src="./img/icon/activekids.png" alt="액티브 키즈™ 클린 앤드 프레시 바스"></a></div>
                         <h5><a href="#">액티브 키즈™<br>클린 앤드 프레시 바스</a></h5>
-                        <!-- <div></div>
-                        <div></div> -->
+                        <div class="black"><p>일반용</p></div>
+                       
                     </li>
-                    <li>
+                    <li class="shampoo">
                         <div class="back"><a href="#"><img src="./img/icon/activesoft.png" alt="액티브 키즈™ 클린 앤드 프레시 샴푸"></a></div>
-                        <h5><a href="#">액티브 키즈™<br>클린 앤드 프레시 샴푸</a></h5>
-                        <div class="skyblue"><p>신생아용</p></div>
+                        <h5><a href="#">액티브 키즈™<br>클린 앤드 프레시 샴푸</a></h5>                        
                         <div class="pink"><p>유아용</p></div>
                     </li>
-                    <li>
+                    <li class="shampoo">
                         <div class="back"><a href="#"><img src="./img/icon/shy.png" alt="액티브 키즈™ 샤이니 샴푸"></a></div>
                         <h5><a href="#">액티브 키즈™<br>샤이니 샴푸</a></h5>
-                        <div class="pink"><p>유아용</p></div>
-                        <!-- <div></div> -->
+                        <div class="pink"><p>유아용</p></div>                        
                     </li>
-                    <li>
+                    <li class="shampoo">
                         <div class="back"><a href="#"><img src="./img/icon/clean.png" alt="액티브 키즈™ 클린 앤드 프레시 샴푸"></a></div>
                         <h5><a href="#">액티브 키즈™<br>클린 앤드 프레시 샴푸</a></h5>
                         <div class="pink"><p>유아용</p></div>
                         <div class="nono"></div>
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img src="./img/icon/green-06-removebg-preview.png" alt="존슨즈 베이비 수딩내추럴 인텐스 모이스처 크림"></a></div>
+                    <li class="lotion">
+                        <div class="back"><a href="#"><img src="./img/icon/green-06-removebg-preview.png" alt="수딩내추럴 인텐스 모이스처 크림"></a></div>
                         <h5><a href="#">수딩내추럴<br>인텐스 모이스처 크림</a></h5>
-                        <div class="gray"><p>아기용</p></div>
-                        <!-- <div></div> -->
+                        <div class="gray"><p>아기용</p></div>                        
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img class="wid" src="./img/icon/baby_lotion_pink.png" alt="액티브 키즈™ 클린 앤드 프레시 바스"></a></div>
+                    <li class="bath">
+                        <div class="back"><a href="#"><img class="widw" src="./img/icon/baby_lotion_pink.png" alt="액티브 키즈™ 클린 앤드 프레시 바스"></a></div>
                         <h5><a href="#">액티브 키즈™<br>클린 앤드 프레시 바스</a></h5>
-                        <!-- <div></div>
-                        <div></div> -->
+                        <div class="black"><p>일반용</p></div>                        
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img src="./img/icon/white.png" alt="베이비 로션 화이트"></div>
+                    <li class="lotion">
+                        <div class="back"><a href="#"><img class="widw" src="./img/icon/white.png" alt="베이비 로션 화이트"></div>
                         <h5><a href="#">베이비<br>로션 화이트</a></h5>
-                        <!-- <div></div>
-                        <div></div> -->
+                        <div class="black"><p>일반용</p></div>                        
                     </li>
-                    <li>
+                    <li class="powder">
                        <div class="back"> <a href="#"><img src="./img/icon/powder.png" alt="베이비 파우더 99% 퓨어 콘스타치"></div>
                         <h5><a href="#">베이비 파우더<br>99% 퓨어 콘스타치</a></h5>
-                        <!-- <div></div>
-                        <div></div> -->
+                        <div class="black"><p>일반용</p></div>                        
                     </li>
-                    <li>
+                    <li class="lotion">
                         <div class="back"><a href="#"><img src="./img/icon/greeny-09-removebg-preview.png" alt="베이비 수딩내추럴 너리싱 로션"></div>
                         <h5><a href="#">베이비 수딩내추럴<br>너리싱 로션</a></h5>
-                        <!-- <div></div>
-                        <div></div> -->
+                        <div class="black"><p>일반용</p></div>                        
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img class="wid" src="./img/icon/pur.png" alt="베드타임™ 베이비 오일"></div>
+                    <li class="oil">
+                        <div class="back"><a href="#"><img class="widp" src="./img/icon/pur.png" alt="베드타임™ 베이비 오일"></div>
                         <h5><a href="#">베드타임™<br>베이비 오일</a></h5>
-                        <div class="skyblue"><p>신생아용</p></div>
-                        <div class="pink"><p>유아용</p></div>
+                        <div class="skyblue"><p>신생아용</p></div>                        
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img src="./img/icon/purlotion.png" alt="베드타임™ 베이비 로션"></div>
+                    <li class="lotion">
+                        <div class="back"><a href="#"><img class="widw" src="./img/icon/purlotion.png" alt="베드타임™ 베이비 로션"></div>
                         <h5><a href="#">베드타임™<br>베이비 로션</a></h5>
-                        <div class="pink"><p>유아용</p></div>
-                        <!-- <div></div> -->
+                        <div class="pink"><p>유아용</p></div>                        
                     </li>
-                    <li>
-                        <div class="back"><a href="#"><img src="./img/icon/pinkoil.png" alt="베이비 오일"></div>
+                    <li class="oil">
+                        <div class="back"><a href="#"><img class="wido" src="./img/icon/pinkoil.png" alt="베이비 오일"></div>
                         <h5><a href="#">베이비<br>오일</a></h5>
-                        <div class="skyblue"><p>신생아용</p></div>
-                        <div class="pink"><p>유아용</p></div>
+                        <div class="skyblue"><p>신생아용</p></div>                       
                     </li>
                 </ul>
             </div>
