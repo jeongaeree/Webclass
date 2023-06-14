@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
+
+.container{
+    width: 1320px;
+    height: 600px;
+    margin: 0 auto;
+    background: #ffc845;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.container> ul> li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div > ul> li > img{
+    width: 300px;
+}
+
+
+

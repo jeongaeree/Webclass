@@ -64,9 +64,9 @@ let productList = [
         bgClass:"gray"
     },
     {
-        category:"bath",
-        name:"액티브 키즈™<br>클린 앤드 프레시 바스",
-        alt:"액티브 키즈™ 클린 앤드 프레시 바스",
+        category:"lotion",
+        name:"베이비<br>로션 화이트",
+        alt:"베이비 로션 핑크",
         target:"일반용",
         imgFileName:"baby_lotion_pink.png",
         bgClass:"black"
@@ -76,7 +76,7 @@ let productList = [
         name:"베이비<br>로션 화이트",
         alt:"베이비 로션 화이트",
         target:"일반용",
-        imgFileName:"white.png",
+        imgFileName:"white_c.png",
         bgClass:"black"
     },
     {
@@ -116,7 +116,7 @@ let productList = [
         name:"베이비<br>오일",
         alt:"베이비 오일",
         target:"신생아용",
-        imgFileName:"pinkoil.png",
+        imgFileName:"pinkoil_c.png",
         bgClass:"skyblue"
     }
 

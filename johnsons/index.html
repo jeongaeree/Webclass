@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson & Johnson</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index_mo.css">    -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+    <!-- <nav class="moMenu">
+        <div class="blackcover"></div>
+        <div class="moGnb">
+            <h1 class="logoMo"><a href="#"><img src="./img/johnson's.png" alt="존슨즈베이비 로고"></a></h1>
+            <ul class="mobileMenuList">
+                <li><a href="#"><h4>BRAND</h4></a>
+                    <ul class="menuB">
+                        <li><a href="#">브랜드 신념</a></li>
+                        <li><a href="#">존슨즈가 걸어온 길 </a></li>
+                        <li><a href="#">우리의 약속</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><h4>SAFETY</h4></a>
+                    <ul class="menuB">
+                        <li><a href="#">존슨즈의 안전성</a></li>
+                        <li><a href="#">성분 안전성</a></li>
+                        <li><a href="#">자연유래성분</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><h4>PRODUCT</h4></a>
+                    <ul class="menuB">
+                        <li><a href="#">제품소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><h4>PURCHASE</h4></a>
+                    <ul class="menuB">
+                        <li><a href="#">구매하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <div class="container">    
+        <header class="pc">                   
+            <div class="logoTop">
+                <h1>
+                    <img src="./img/johnson's.png" alt="존슨즈 로고" height="45px">
+                </h1>
+            </div>
+            
+            <div class="menuBar">
+                <nav>
+                    <ul class="menuA">
+                        <li><a href="#"><h4>BRAND</h4></a>
+                            <ul class="menuB">
+                                <li><a href="#">브랜드 신념</a></li>
+                                <li><a href="#">존슨즈가 걸어온 길 </a></li>
+                                <li><a href="./sub2.html">우리의 약속</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><h4>SAFETY</h4></a>
+                            <ul class="menuB">
+                                <li><a href="./sub1.html">존슨즈의 안전성</a></li>
+                                <li><a href="#">성분 안전성</a></li>
+                                <li><a href="#">자연유래성분</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><h4>PRODUCT</h4></a>
+                            <ul class="menuB">
+                                <li><a href="./sub4.html">제품소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><h4>PURCHASE</h4></a>
+                            <ul class="menuB">
+                                <li><a href="#">구매하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="searchBar">
+                    <input type="text" id="reser_name" placeholder="" required;>                    
+                    <button class="btnClear"></button>
+                </div>
+                <script>
+                    var btnClear = document.querySelector('.btnClear');
+                    btnClear.addEventListener('click', function(){
+                        btnClear.parentNode.querySelector('input').value = "";
+                    })
+                </script>                
+            </div>            
+        </header>
+        <main>
+            <div class="mainBanner">              
+                <div class="station1 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./img/banner01.png" alt="1" width="1920px" height="600px">
+                            <div class="slideTxt">
+                                <h3 style="color: rgba(115, 172,218);">CHOOZE GENTLE</h3>
+                                <h2 style="color: #000000;">아기와 지구를<br> 위해 순하게</h2>
+                                <p class="first" style="color: #fff;"><a href="#">VIEW MORE</a></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./img/banner_0202.png" alt="2" width="1920px" height="600px">
+                            <div class="slideTxt momore">
+                                <h3 style="color: rgba(90, 100, 216);">NEW JOHNSON'S</h3>
+                                <h2 style="color: #2d2d2d;">엄마의 시선에서<br> 더욱 순하게!</h2>
+                                <p class="second" style="color: #fff;"><a href="#">VIEW MORE</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination">
+                    <li>1</li>
+                    <li>2</li>
+                </div>  
+            </div>
+            <div class="mainF">
+                <div class="partoneTop">
+                    <h4>NEW</h4>
+                    <h1>
+                        <img src="./img/johnson's.png" alt="존슨즈 로고" height="100px">
+                    </h1>
+                    <h2>
+                        존슨즈의 모든 것을<br><span>따뜻한 엄마의 시선</span>으로 개선했습니다.
+                    </h2>
+                    <img class="texture" src="./img/lotion texture.png" alt="로션텍스쳐">
+                </div>
+                <!-- <div class="partoneMid">
+                    <section><img src="./img/circle-04.png" alt="존스즈베이비 로션"></section>
+                </div> -->
+                <script>
+                    $(document).ready(function () {
+                        $(window).scroll(function () {
+                            $('.texture').each(function (i) {
+            
+                                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                                var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+                                if (bottom_of_window > bottom_of_element) {
+                                    $(this).animate({'opacity': '1', 'margin-right': '0px'}, 10);
+                                }
+            
+                            });
+                        });
+                    });
+            </script>
+
+                <div class="partoneBot">
+                    <section class="a">
+                        <h3>Pure</h3>
+                        <h4>순한</h4>
+                        <p>순한 아기 제품을<br>
+                            만들겠다는 신념으로<br>
+                            연구해왔습니다.<br>
+                            <br>
+                            이제는 제품 뿐만 아니라<br>
+                            우리가 실행하고 지지하는<br>
+                            모든 것에 엄마의 마음을<br>
+                            담았습니다.
+                        </p>                        
+                    </section>                    
+                    <section class="b">
+                        <h3>Care</h3>
+                        <h4>보호</h4>
+                        <p>125년 이상 베이비 케어 연구에<br>
+                            몰두해 왔습니다.<br>
+                            <br>
+                            최신 임상시험 결과와<br>
+                            아기에 대한 사랑을<br>
+                            제품에 담아<br>
+                            품질을 개선했고,<br>
+                            세계적인 안전 기준을<br>넘어섰습니다.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h3>Safety</h3>
+                        <h4>안전한</h4>
+                        <p>제조 방법을<br>
+                            신중히 재검토해<br>                        
+                            성분을 절반으로 줄였습니다.<br>
+                            <br>
+                            핵심 성분만을 사용하여<br>
+                            제품에 담아<br>
+                            품질을 개선했고,<br>
+                            세계적인 안전 기준을 넘어섰습니다.
+                        </p>                        
+                    </section>
+                </div>
+            </div>
+            <div class="mainB">
+                <h1><img src="./img/check.png" alt="체크표시"></h1>
+                <h2>존슨즈는<br>
+                    베이비 케어 제품의<br>
+                    <span>안전과 품질</span>을 보장합니다.</h2>
+                <div>
+                    <img src="./img/body.png" alt="존슨즈베이비 바디워시" width="800px">
+                </div>
+                <ul>
+                    <li>
+                        <div class="num"></div> 
+                        <h5>01 &nbsp; POINT</h5>                                               
+                        <h3>새롭고 순한 향</h3>
+                        <p>감각을 복합적으로 활용하는 경험은<br>
+                            <span>아기의 건강한 성장</span>에 매우 중요합니다.<br>
+                            이에 존슨즈®는 세계 최고의 향료<br>
+                            업체들과 협력하여 새롭고 순한 향을<br>
+                            개발하고 있습니다.</p>
+                    </li>
+                    <li>
+                        <div class="num"></div>
+                        <h5>02 &nbsp; POINT</h5>                                                
+                        <h3>자연유래성분 사용</h3>
+                        <p>존슨즈®는 자연유래 화장품에   대해<br>
+                            국제 표준화 기구(ISO)의<br>
+                            독자적인 기준을 준수합니다.<br>
+                            존슨즈®의 워시, 로션 및 샴푸 함유 성분의<br>
+                            <span>90%*이상이 자연 유래 성분</span>입니다.</p>
+                    </li>
+                    <li>
+                        <div class="num"></div> 
+                        <h5>03 &nbsp; POINT</h5>                                               
+                        <h3>엄격한 안전 기준</h3>
+                        <p>존슨즈® 베이비 케어 제품은<br>
+                            세계적인 안전 기준을 넘어서기 위해<br>
+                            엄격한 테스트를 받습니다.<br>
+                            존슨즈®의 5단계 제품 안전성 테스트는<br>
+                            존슨즈® 베이비 케어 제품의<br>
+                            <span>안전과 품질을 보장</span>합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li>이용약관</li>
+                    <li>CONTACT US</li>
+                    <li>법적고지</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="logoBot">
+                <h1><img src="./img/logo_white-04.png" alt="존슨스하얀색로고" width="190px"></h1>
+            </div>
+            <div class="adress"><p>
+                서울특별시 용산구 한강대로 92 용산타워 27층 ㅣ 대표전화 : 080-023-1414(수신자부담)<br>이 사이트는 대한민국 사용자만을 위해 한국존슨즈앤드존슨에서 제작하였으며 내용상 모든 책임은 한국 조슨앤드존슨에 있습니다.<br>All right reserved.Last modified date February 20,2023.<br>Copyrightⓒ 한국존슨앤드존슨판매(유)2019.
+            </p></div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
