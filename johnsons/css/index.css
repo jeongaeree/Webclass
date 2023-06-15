@@ -184,9 +184,7 @@ header>.logoTop{
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    margin-left: 110px;
-    
-    
+    margin-left: 110px;   
        
 }
 .menuBar> nav > ul > li {
@@ -238,7 +236,7 @@ header>.logoTop{
 
 .searchBar .btnClear {
   position: absolute;
-  top: 0;
+  top: -7px;
   right: 5px;
   width: 40px;
   height: inherit;
@@ -248,59 +246,8 @@ header>.logoTop{
   outline: none;
   cursor: pointer;
 
-}
-
-/* .searchBar{
-    margin-top: 5px;
-    background: #f1f0f0;
-   
-    border-radius: 30px;
-    width: 270px;
-    height: 42px;
-    margin-right: 160px;
-    padding-right: 20px;
-       
-    line-height: 42px;
-    position: relative;
-    
-
-}
-
-input{
-    width: 270px;
-    height: 42px;
-    margin-right: 140px;
-    padding-right: 20px;
-    border: 0px;
-    outline: none;
-    background: none;
-}
-
-div button{
-    background: url(../img/reading\ glasses.png);
-    position: absolute;
-    width: 24px;
-    height: 24px;
-} */
-
-
-
-/* <img src="./img/reading glasses.png" alt="돋보기" width="26px"> */
-
-
-/* .searchBar{
-    margin-top: 5px;
-    background: #f1f0f0;
-    /* border: 1px solid gray; */
-    /* border-radius: 30px;
-    width: 270px;
-    height: 42px;
-    margin-right: 160px;
-    
-    line-height: 42px; */
-    /* margin-left: 100px; */
-    
- */
+}    
+ 
 
 .searchBar button{
     border: 0px;
@@ -318,7 +265,7 @@ div button{
 
 main{
     width:1920px;    
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 190px;
    
 }
@@ -540,13 +487,12 @@ main{
 }
 
 .mainF>.partoneBot>.b{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: right;
     position:relative;
     top: 40%;
     right: 100px;
 }
-
 
 
 
@@ -753,7 +699,7 @@ footer>.adress>p{
 
 #main_sub1>div>.icon>ul{
     padding:132px 300px;
-    border: 1px/ solid red;    
+    /* border: 1px/ solid red;     */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -800,7 +746,7 @@ footer>.adress>p{
     /* transform: translateX(300px);  */
 }
 .sub_c ul>li{
-    border:5px solid red;
+    /* border:5px solid red; */
 }
 
 .sub_c>h1{
@@ -844,7 +790,7 @@ footer>.adress>p{
 
 .sub_c>ul p{
     /* width: 1000px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     /* padding-top: 64px; */
     font-size: 29px;
@@ -918,6 +864,9 @@ footer>.adress>p{
 
 
 
+
+
+
 /* -----------subtwo layout---------- */
 
 .subtwo{
@@ -931,13 +880,24 @@ footer>.adress>p{
     height: 780px;
     
 }
+
 .subtwo>h1{
+    
     position: absolute;
     font-size: 73px;
     text-align: left;
     color: #fff;
     top: 477px;
     left: 160px;
+    /* position: absolute;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 130%; */
 }
 
 .subtwo>p{
@@ -948,6 +908,14 @@ footer>.adress>p{
     top: 580px;
     left: 160px;
     line-height: 130%;
+    /* position: absolute;
+    font-size: 27px;
+    text-align: center;
+    color: #fff;
+    top: 580px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 130%; */
 }
 
 .sub_bb{
@@ -962,12 +930,13 @@ footer>.adress>p{
 
 .sub_bb::after{
     content: "";
-    width: 1px;
-    height: 106px;
+    width: 39px;
+    height: 1px;
     background: #4b91cb;
     position: absolute;
-    top: 0;
-    left:50%;
+    top: 165PX;
+    left: 942PX;
+    
 }
 
 
@@ -1003,9 +972,9 @@ footer>.adress>p{
 /* ----------------------------- */
 .sub_cc{
     width: 1920px;
-    height: 2800px;
+    /* height: 2800px; */
     margin: 0 auto;
-    background: #efefef;
+    background:#F8F8F8;;
     text-align: center;
     padding-top: 180px;
     position: relative;
@@ -1013,12 +982,12 @@ footer>.adress>p{
 
 .sub_cc::after{
     content: "";
-    width: 1px;
-    height: 106px;
+    width: 39px;
+    height: 1px;
     background: #4b91cb;
     position: absolute;
-    top: 0;
-    left:50%;
+    top: 165PX;
+    left: 942PX;
 }
 
 
@@ -1049,13 +1018,17 @@ footer>.adress>p{
     margin-bottom: 150px;
     line-height: 50px;    
 }
+.sub_cc>img{
+    width: 1920px;
+    transform: translateY(-230px);
+}
 
 ul li>.lineone::after{
     content: "";
     position: absolute;    
     height: 179px;
     left: 50%;
-    top: 52%;
+    top:1545px;
     border: 1px dashed #4b91cb;
 }
 
@@ -1064,7 +1037,7 @@ ul li>.linetwo::after{
     position: absolute;    
     height: 179px;
     left: 50%;
-    top: 67%;
+    top: 1990px;
     border: 1px dashed #4b91cb;
 }
 
@@ -1161,15 +1134,19 @@ div>.wave_one{
 }
 
 .sub_dd{
+    /* border: 1PX solid red; */
     width: 1920px;
-    height: 1000px;
+    /* height: 1000px; */
     margin: 0 auto;
     position: relative;
+    background: #F8F8F8;
+    padding-top: 100px;
 }
 
-.sub_dd img{
+.sub_dd>.biger{
     width: 1920px;
-    height: 1000px;
+    height: auto;
+    transform: translateY(-20%);
 }
 
 .sub_dd h2{
@@ -1184,6 +1161,76 @@ div>.wave_one{
     line-height: 60px;
 
 }
+.sliderbot{
+    width: 100%;
+}
+
+.sub_dd>h1{
+    font-size: 40px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    
+}
+
+.imga{
+    width: 190px;
+    height: auto;
+    display: block;
+    margin: 0 auto 70px auto;
+}
+
+.bluecir{
+    width: 30px;
+    height: 30px;
+    background: #1C8EC8;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    transform: translateY(-97%);
+}
+
+.sliderbot ul li h3{
+    color: #1b1b1b;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sliderbot ul li p{
+    color: #1b1b1b;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sliderbot ul{
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.botbot{
+    width: 1920px;
+    height: 100px;
+    border-top: 1px solid #4b91cb;
+    transform: translateY(-367%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   

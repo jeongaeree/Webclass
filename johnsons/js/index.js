@@ -25,9 +25,19 @@ window.onload = function(){
     document.querySelector(".station1").addEventListener("mouseout",function(){
      station1.autoplay.start()
     })
-    
 
+    $(window).scroll(function(){
+      let winst = $(window).scrollTop()
+      let con2top = $(".con2").offset().top
+      if(winst>=con2top){
+          $(".con2").addClass("on")
+      }else{
+          $(".con2").removeClass("on")
+      }
+  })
     
 };
+
+
 
 
