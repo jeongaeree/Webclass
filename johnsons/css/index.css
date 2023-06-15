@@ -3,8 +3,12 @@ ul,ol{list-style: none;}
 a{text-decoration:none;color:inherit;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
 
-/* font */
+@font-face {font-family:Pretendard;
+}
+   
 
+/* font */
+/* 
 @font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Thin.woff') format('woff');
@@ -22,14 +26,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     src: url('./images/Pretendard-Light.woff') format('woff');
     font-weight: 300;
     font-display: swap;
-}
+} */
 /* @font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-display: swap;
 } */
-@font-face {
+/* @font-face {
     font-family: 'Pretendard';
     src: url('./images/Pretendard-Medium.woff') format('woff');
     font-weight: 500;
@@ -58,20 +62,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: normal;}
     src: url('./images/Pretendard-Black.woff') format('woff');
     font-weight: 900;
     font-display: swap;
-}
+}*/
 @font-face {
     font-family: 'Jal_Haru';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Haru.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/variable/pretendardvariable.css");
 
 body, html {cursor: url(../img/diamond-06-06-06.png)20 30, auto}
 
 /* headerlayout */
 
 html{font-size: 17px;
-    font-family: 'Pretendard';}
+font-family: "Pretendard Variable";}
 
 .container{    
     /* border: 1px solid red; */
@@ -447,14 +452,14 @@ main{
     /* height: 1700px; */
     background: url('../img/big_main-03.png') no-repeat;
     background-size: 810px 922px;
-    background-position: 50% 50%;
-    font-family: 'rpet';
+    background-position: 50% 50%;    
     display:flex;
     justify-content: space-between;
+    padding-right: 200px;
+    padding-left:200px;
 }
 
-.mainF>.partoneBot>section>h3{
-    font-family: 'Pretendard';
+.mainF>.partoneBot>section>h3{    
     font-weight: 600;    
     color: rgba(28, 143, 201);
     font-size: 58px;
@@ -463,8 +468,7 @@ main{
 }
 
 
-.mainF>.partoneBot>section>p{
-    font-family: 'Pretendard';
+.mainF>.partoneBot>section>p{    
     font-size: 32px;
     line-height: 120%;
 
@@ -477,24 +481,35 @@ main{
     margin-bottom: 20px;
 
 }
+/* ----------------------------------------------- */
+.partoneBot>.a{
+    transform: translateX(-164px);
+    opacity: 0.1;
+    transition: all 0.5s ease 0s;}
 
-.mainF>.partoneBot>.a{
-    position:relative;
-    top: 300px;
-    left: 100px;
-    /* opacity: 0; */
-    /* margin-left: -300px; */
-}
+.a.on{
+    transform: translateX(0);
+    opacity: 1;
 
-.mainF>.partoneBot>.b{
-    /* border: 1px solid red; */
+}   
+
+.partoneBot>.b{
+    transform: translateX(180px);
+    opacity: 0.1;
+    transition: all 0.5s ease 0s;
     text-align: right;
-    position:relative;
-    top: 40%;
-    right: 100px;
+}
+.b.on{
+    transform: translateX(0);
+    opacity: 1;    
 }
 
 
+
+
+
+
+/* ----------------------------------------------- */
 
 .mainB{
     height: 5000px;
@@ -1146,7 +1161,7 @@ div>.wave_one{
 .sub_dd>.biger{
     width: 1920px;
     height: auto;
-    transform: translateY(-20%);
+    transform: translateY(-5%);
 }
 
 .sub_dd h2{
@@ -1185,7 +1200,7 @@ div>.wave_one{
     background: #1C8EC8;
     border-radius: 50%;
     margin: 0 auto 30px auto;
-    transform: translateY(-97%);
+    transform: translateY(-27%);
 }
 
 .sliderbot ul li h3{
@@ -1217,8 +1232,10 @@ div>.wave_one{
     width: 1920px;
     height: 100px;
     border-top: 1px solid #4b91cb;
-    transform: translateY(-367%);
+    transform: translateY(-351%);
 }
+
+
 
 
 
