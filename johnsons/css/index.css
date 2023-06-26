@@ -1236,6 +1236,37 @@ div>.wave_one{
 }
 
 
+.controler{
+    position: relative;
+}
+
+.controler a:nth-of-type(1):after{
+    content:"";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1C8EC8;
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+.controler a:nth-of-type(2):after{
+    content:"";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1C8EC8;
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+.controler>a{
+    position: relative;
+}
+
+
+
 
 
 

@@ -1,0 +1,101 @@
+/* reset */
+*{margin:0;padding:0;}
+a{text-decoration: none;color:inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+ul,ol{list-style:none;}
+img{max-width: 100%;}
+strong,b{font-weight: normal;}
+i,em,address{font-style: normal;}
+
+.popup{
+    display: none;
+}
+
+
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 200px;
+    height: 970px;
+    background: #f4e681;
+
+}
+main{
+    width: calc(100% - 200px);
+    height: 600px;
+}
+
+.top{
+    width: 100%;
+    height: 400px;
+}
+
+.contents{
+    width: 100%;
+    height: 250px;
+    display: flex;
+   
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background: #c3bd93;
+}
+/* -------------------- */
+
+.logo{
+    width: 200px;
+    height: 40px;
+}
+
+.gnb {
+    position: relative;
+    z-index: 10;
+    /* position :relative를 해서 z-index값을 높여서 이미지 슬라이드보다 앞쪽에 배치되도록  */
+}
+.gnb>li{
+    height:50px;
+    transition:all 0.5s ease 0s;
+    position:relative;
+}
+
+.gnb>li>a{
+    display:flex;
+    height:50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.gnb>li>ul{
+    transition:all 0.5s ease 0s;
+    overflow: hidden;
+    position:absolute;
+    left:200px;
+    top:0;
+    width:0%;
+    height:100%;
+    /* border:1px solid red; */
+    display:flex;
+    background:#ccc;
+    opacity: 0;;
+}
+.gnb:hover ul{
+    width:500%;
+    opacity: 1;
+}
+.gnb>li>ul>li{
+    width:20%;
+    /* border:1px solid blue; */
+    text-align: center;    
+    line-height:50px;
+    color:#000;
+}
+.gnb li:hover{
+    background:#000;
+    color:#fff;
+}

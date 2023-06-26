@@ -1,0 +1,144 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;color: inherit;}
+img{max-width: 100%;}
+
+/* layout */
+
+
+header{
+    border: 1px solid red;
+    height: 80px;
+    position: relative;
+}
+
+.innerHeader{
+    border: 1px solid blue;
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    border: 1px solid red;
+    align-self:center;
+}
+.gnb{
+    /* border: 1px solid green; */
+    width: 800px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.gnb>li{
+    flex: 1;
+    /* border: 1px solid blue; */
+    
+}
+
+.gnb>li>a{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+    
+}
+
+/* 2depth */
+
+.gnb2dep{
+    border: 1px solid lime;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    font-weight: 400;
+    opacity: 0;
+    transition: all 0.5 ease 0s;
+    pointer-events: none;
+    z-index: 10;
+    
+}
+
+
+
+header:after{
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 50%;
+    height: 0px;
+    background: #ccc;
+    opacity: 0.9;
+    transition: all 0.5s ease 0s;
+}
+
+header.on:after{
+    height: 230px;
+}
+
+header:before{
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50%;
+    height: 0px;
+    background: #413d3d;
+    opacity: 0.9;
+    transition: all 0.5s ease 0s;
+}
+
+header.on:before{
+    height: 230px;
+}
+
+
+
+
+.gnb>li>a:hover{
+    color: gold;
+    background: black;
+}
+
+.gnb>li:hover .gnb2dep{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gnb2dep>section{
+    flex: 1;
+    padding: 20px;
+}
+
+.gnb2dep>section:nth-of-type(2){
+    display: flex;
+}
+
+.gnb2dep>section:nth-of-type(2)>ul{
+    margin-left: 15px;
+    border-left: 1px solid gold;
+    padding-left: 15px; 
+}
+
+
+
+
+.banner{
+    height: 60vh;
+    /* display: none; */
+}
+
+.banner img{
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+}
+

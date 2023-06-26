@@ -28,16 +28,16 @@ ul,ol{list-style: none;}
     /* font-size: 3rem; */
 }
 .floatingTxt h1{
-    font-size: 5rem;
-    line-height: 100%;
-    animation: introAni;
+    /* font-size: 5rem; */
+    /* line-height: 100%; */
+    
     
 
     
 }
 
 .floatingTxt p{    
-    border-top: #fff;
+    border-top: 1px solid #fff;
     text-align: center;
     /* display: flex; */
     letter-spacing: 10px;
@@ -59,6 +59,22 @@ ul,ol{list-style: none;}
 
 }
 
+
+
+.floatingTxt h1{
+    /* font-size: 0px; */
+    perspective: 300px;
+    
+    /* animation: introAni 1s ease 0s; */
+    
+}
+.floatingTxt h1 b{
+    /* font-size: 5rem;
+    line-height: 5rem;
+    opacity: 0;
+    display:inline-block; */
+}
+
 @keyframes introAni {
     0%{opacity: 0;
     transform: translateX(-10px) rotateY(45deg);}
@@ -66,20 +82,7 @@ ul,ol{list-style: none;}
     transform: translateX(0px) rotateY(0deg);;}
 }
 
-.floatingTxt h1{
-    font-size: 0px;
-    perspective: 300px;
-    /* animation: introAni 1s ease 0s; */
-    
-}
-.floatingTxt h1 b{
-    font-size: 5rem;
-    line-height: 5rem;
-    opacity: 0;
-    display:inline-block;
-}
-
-.floatingTxt h1 b:nth-of-type(2){animation: introAni 1s ease 0.25s forwards;}
+/* .floatingTxt h1 b:nth-of-type(2){animation: introAni 1s ease 0.25s forwards;}
 .floatingTxt h1 b:nth-of-type(3){animation: introAni 1s ease 0.5s forwards;}
 .floatingTxt h1 b:nth-of-type(1){animation: introAni 1s ease 0s forwards;}
 .floatingTxt h1 b:nth-of-type(4){animation: introAni 1s ease 0.75s forwards;}
@@ -92,7 +95,16 @@ ul,ol{list-style: none;}
 .floatingTxt h1 b:nth-of-type(11){animation: introAni 1s ease 2.5s forwards;}
 .floatingTxt h1 b:nth-of-type(12){animation: introAni 1s ease 2.75s forwards;}
 .floatingTxt h1 b:nth-of-type(13){animation: introAni 1s ease 3s forwards;}
-.floatingTxt h1 b:nth-of-type(14){animation: introAni 1s ease 3.25s forwards;}
+.floatingTxt h1 b:nth-of-type(14){animation: introAni 1s ease 3.25s forwards;} */
+
+
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

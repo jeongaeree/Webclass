@@ -44,8 +44,8 @@ header{
     display: none;
 }
 
-.gnb>li:hover>ul{
-    display:block;
+.gnb>ul>li:hover{
+    height: 200px;
 }
 .gnb>li>ul>li{
     border: 1px solid black;
